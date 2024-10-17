@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tp2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Tp2">
+
+        <!-- MainActivity avec l'attribut android:exported -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"> <!-- true si l'activité peut être accessible depuis d'autres applications -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- RegisterActivity avec android:exported -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" /> <!-- Ajouter android:exported pour chaque activité -->
+
+        <!-- HomeActivity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" /> <!-- Ajouter android:exported -->
+
+    </application>
+</manifest>
